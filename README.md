@@ -1,6 +1,6 @@
 # Tampermonkey Userscripts
 
-Tampermonkeyで使用する個人的なユーザースクリプト集です。
+Tampermonkeyで使用する個人的なユーザースクリプト集です。誰かの役に立つかもしれないということで公開しておきます。対象サイトのURLやロジックが変更になった等で動作しなくなる可能性があります。自己責任でご利用ください。
 
 ## Installation
 
