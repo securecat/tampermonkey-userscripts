@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         宝くじ公式サイト - 下層メニュー非表示
-// @namespace    http://tampermonkey.net
+// @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.0
 // @description  宝くじ公式サイトのグローバルナビのホバーで出る下層メニューを非表示にします
 // @author       https://github.com/securecat
