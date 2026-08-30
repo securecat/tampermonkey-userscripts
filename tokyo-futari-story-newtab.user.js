@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TOKYOふたりSTORY - プロフィールを新しいタブで開く
-// @namespace    tokyo-futari-story-newtab
+// @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.1
 // @description  プロフィール詳細を新しいタブで開く
 // @author       https://github.com/securecat
