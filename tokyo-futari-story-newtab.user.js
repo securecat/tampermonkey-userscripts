@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
 // @namespace    tokyo-futari-story-newtab
-// @version      1.2
+// @version      1.4
 // @description  プロフィールと写真を新しいタブで開く
 // @author       https://github.com/securecat
 // @match        https://mypage-tokyo.parms-net.jp/mypr/list*
 // @match        https://mypage-tokyo.parms-net.jp/mypr/favorite
 // @match        https://mypage-tokyo.parms-net.jp/mypr/detail/*
+// @match        https://mypage-tokyo.parms-net.jp/recommend/list
+// @match        https://mypage-tokyo.parms-net.jp/profilebox/*
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
@@ -32,8 +34,25 @@
             link.target = '_blank';
         });
 
-        // バストアップ写真：新しいタブで開く
-        document.querySelectorAll('img.profile_photo[alt="バストアップ写真"]').forEach(img => {
+        // 紹介一覧：プロフィールを新しいタブで開く
+        document.querySelectorAll('a.win_pop[data-action*="/profilebox/"]').forEach(link => {
+            const newLink = link.cloneNode(true);
+
+            newLink.href = link.dataset.action;
+            newLink.target = '_blank';
+            newLink.classList.remove('win_pop');
+            newLink.removeAttribute('onclick');
+            newLink.removeAttribute('data-action');
+
+            link.replaceWith(newLink);
+        });
+
+        // リンクで包まれていないプロフィール写真：新しいタブで開く
+        document.querySelectorAll('img.profile_photo').forEach(img => {
+            if (img.parentElement.tagName === 'A') {
+                return;
+            }
+
             const link = document.createElement('a');
 
             link.href = img.src;
