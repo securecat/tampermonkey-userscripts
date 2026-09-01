@@ -62,7 +62,7 @@
             link.appendChild(img);
         });
 
-        // プライベート写真：ライトボックスを無効にして新しいタブで開く
+        // ライトボックスのプロフィール写真：ライトボックスを無効にして新しいタブで開く
         document.querySelectorAll('a.boxer img.profile_photo[alt="プライベート写真"]').forEach(img => {
             const oldLink = img.closest('a');
             const newLink = oldLink.cloneNode(true);
