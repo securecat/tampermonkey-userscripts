@@ -16,6 +16,6 @@
 
 ### TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
 
-TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧・お気に入り一覧・紹介一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。また、プロフィールページで写真のURLを空のタブにコピペする手間も省きます。
+TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧・お気に入り一覧・紹介一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。
 
 [Install / View](./tokyo-futari-story-newtab.user.js)
