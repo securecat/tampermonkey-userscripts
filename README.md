@@ -14,8 +14,8 @@
 
 [Install / View](./takarakuji-official-hide-subnav.user.js)
 
-### TOKYOふたりSTORY - プロフィールを新しいタブで開く
+### TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
 
-TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧やお気に入り一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。
+TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧やお気に入り一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。また、プロフィールページで写真のURLを空のタブにコピペする手間も省きます。
 
 [Install / View](./tokyo-futari-story-newtab.user.js)
