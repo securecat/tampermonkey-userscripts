@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
-// @namespace    tokyo-futari-story-newtab
+// @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.5
 // @description  プロフィールと写真を新しいタブで開く
 // @author       https://github.com/securecat
