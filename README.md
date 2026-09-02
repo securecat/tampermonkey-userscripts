@@ -19,3 +19,9 @@
 TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧・お気に入り一覧・紹介一覧・お見合い一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。
 
 [Install / View](./tokyo-futari-story-newtab.user.js)
+
+### TOKYOふたりSTORY - コピペ禁止解除
+
+TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` のコピペ禁止を解除して、待ち合わせの日時や場所の情報をカレンダーに転記しやすくします。
+
+[Install / View](./tokyo-futari-story-copy.user.js)
