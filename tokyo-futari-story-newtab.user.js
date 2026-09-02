@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
 // @namespace    tokyo-futari-story-newtab
-// @version      1.4
+// @version      1.5
 // @description  プロフィールと写真を新しいタブで開く
 // @author       https://github.com/securecat
 // @match        https://mypage-tokyo.parms-net.jp/mypr/list*
 // @match        https://mypage-tokyo.parms-net.jp/mypr/favorite
 // @match        https://mypage-tokyo.parms-net.jp/mypr/detail/*
 // @match        https://mypage-tokyo.parms-net.jp/recommend/list
+// @match        https://mypage-tokyo.parms-net.jp/contact/list
 // @match        https://mypage-tokyo.parms-net.jp/profilebox/*
 // @grant        none
 // @run-at       document-start
@@ -34,7 +35,7 @@
             link.target = '_blank';
         });
 
-        // 紹介一覧：プロフィールを新しいタブで開く
+        // 紹介一覧・お見合い一覧：プロフィールを新しいタブで開く
         document.querySelectorAll('a.win_pop[data-action*="/profilebox/"]').forEach(link => {
             const newLink = link.cloneNode(true);
 
