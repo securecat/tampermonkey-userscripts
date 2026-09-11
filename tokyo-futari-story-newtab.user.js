@@ -48,6 +48,17 @@
             link.replaceWith(newLink);
         });
 
+        // 検索サービス一覧：プロフィール写真をクリックして写真を新しいタブで開く
+        document.querySelectorAll('img.mypr_list_photo').forEach(img => {
+            const link = document.createElement('a');
+
+            link.href = img.src;
+            link.target = '_blank';
+
+            img.replaceWith(link);
+            link.appendChild(img);
+        });
+
         // リンクで包まれていないプロフィール写真：新しいタブで開く
         document.querySelectorAll('img.profile_photo').forEach(img => {
             if (img.parentElement.tagName === 'A') {
