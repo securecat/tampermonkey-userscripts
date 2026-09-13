@@ -25,3 +25,9 @@ TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧�
 TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` のコピペ禁止を解除して、待ち合わせの日時や場所の情報をカレンダーに転記しやすくします。
 
 [Install / View](./tokyo-futari-story-copy.user.js)
+
+### 楽天ブックス - 下層メニュー非表示
+
+楽天ブックスのグローバルナビのホバーで表示される下層メニューがとにかく邪魔なので非表示にします。非表示にしてもメニューアイテム押下でカテゴリトップへ行けるため遷移上の支障はありません。
+
+[Install / View](./rakuten-books-hide-subnav.user.js)
