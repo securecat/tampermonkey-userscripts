@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  楽天ブックスのグローバルナビのホバーで表示される下層メニューを非表示にします
 // @author       https://github.com/securecat
-// @match        https://books.rakuten.co.jp/search*
+// @match        https://books.rakuten.co.jp/*
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
