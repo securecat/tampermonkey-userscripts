@@ -7,7 +7,7 @@
 // @match        https://mypage-tokyo.parms-net.jp/mypr/list*
 // @match        https://mypage-tokyo.parms-net.jp/mypr/favorite
 // @match        https://mypage-tokyo.parms-net.jp/mypr/detail/*
-// @match        https://mypage-tokyo.parms-net.jp/recommend/list*
+// @match        https://mypage-tokyo.parms-net.jp/recommend/*
 // @match        https://mypage-tokyo.parms-net.jp/contact/list
 // @match        https://mypage-tokyo.parms-net.jp/profilebox/*
 // @grant        none
