@@ -12,22 +12,22 @@
 
 宝くじ公式サイト `https://www.takarakuji-official.jp/` の左メニューをホバーした時に出る下層メニューが、スマートに閉じる操作が分からないうえに複数が重なって表示されるなどして邪魔でしかないため、これを非表示にします。
 
-[Install / View](./takarakuji-official-hide-subnav.user.js)
+[Install / View](./userscripts/takarakuji-official-hide-subnav.user.js)
 
 ### TOKYOふたりSTORY - プロフィールと写真を新しいタブで開く
 
 TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` の検索結果一覧・お気に入り一覧・紹介一覧・お見合い一覧で、プロフィールページのURLを空のタブにコピペする手間を省きます。
 
-[Install / View](./tokyo-futari-story-newtab.user.js)
+[Install / View](./userscripts/tokyo-futari-story-newtab.user.js)
 
 ### TOKYOふたりSTORY - コピペ禁止解除
 
 TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` のコピペ禁止を解除して、待ち合わせの日時や場所の情報をカレンダーに転記しやすくします。
 
-[Install / View](./tokyo-futari-story-copy.user.js)
+[Install / View](./userscripts/tokyo-futari-story-copy.user.js)
 
 ### 楽天ブックス - 下層メニュー非表示
 
 楽天ブックスのグローバルナビのホバーで表示される下層メニューがとにかく邪魔なので非表示にします。非表示にしてもメニューアイテム押下でカテゴリトップへ行けるため遷移上の支障はありません。
 
-[Install / View](./rakuten-books-hide-subnav.user.js)
+[Install / View](./userscripts/rakuten-books-hide-subnav.user.js)
