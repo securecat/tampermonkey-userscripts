@@ -31,3 +31,9 @@ TOKYOふたりSTORY `https://mypage-tokyo.parms-net.jp/` のコピペ禁止を�
 楽天ブックスのグローバルナビのホバーで表示される下層メニューがとにかく邪魔なので非表示にします。非表示にしてもメニューアイテム押下でカテゴリトップへ行けるため遷移上の支障はありません。
 
 [Install / View](./userscripts/rakuten-books-hide-subnav.user.js)
+
+### Notion - リンクとボタン枠の視認性改善
+
+Notion `https://app.notion.com/` のリンク・メンション・目次・未入力プロパティ・コメント日付などのクリックできるテキストが薄いグレーで読みにくいため、濃い青（ダークモードでは明るい水色）にし、下線をブラウザ標準の太さにします。あわせて、ボタンブロックの見えにくい枠線を見やすい色にします。
+
+[Install / View](./userscripts/notion-link-visibility.user.js)
