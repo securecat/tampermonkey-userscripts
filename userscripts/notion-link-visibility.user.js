@@ -2,7 +2,7 @@
 // @name         Notion - リンクとボタン枠の視認性改善
 // @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.0
-// @description  Notion のリンク・メンション・未入力プロパティの薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠を見やすい色にします
+// @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠を見やすい色にします
 // @author       https://github.com/securecat
 // @match        https://app.notion.com/*
 // @grant        GM_addStyle
@@ -47,9 +47,29 @@
       color: inherit !important;
     }
 
-    /* ページプロパティの「未入力」（クリックで編集できる値欄） */
+    /* リンクメンションのサイト名部分（URL の前のラベル）は本文色に */
+    .notion-link-mention-token [style*="--c-texSec"] {
+      color: var(--c-texPri) !important;
+    }
+
+    /* ページプロパティ・データベースの「未入力」「Empty」（クリックで編集できる値欄） */
     .notion-page-block > [data-popup-origin] [style*="--c-texTer"],
-    .notion-page-block > [data-testid="property-value"] [style*="--c-texTer"] {
+    .notion-page-block [data-testid="property-value"] [style*="--c-texTer"] {
+      color: var(--tm-notion-link-color) !important;
+    }
+
+    /* 目次ブロック：背景画像で描いている薄い下線を、ブラウザ標準の下線に置き換える */
+    .notion-table_of_contents-block a {
+      color: var(--tm-notion-link-color) !important;
+    }
+
+    .notion-table_of_contents-block a [style*="background-image"] {
+      background-image: none !important;
+      text-decoration: underline !important;
+    }
+
+    /* コメントの日付・(edited) 表示（クリックで詳細が出る） */
+    [style*="color: var(--c-texTer)"] > [data-popup-origin] {
       color: var(--tm-notion-link-color) !important;
     }
 
