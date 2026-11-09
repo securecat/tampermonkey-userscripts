@@ -2,7 +2,7 @@
 // @name         Notion - リンクとボタン枠の視認性改善
 // @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.0
-// @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠を見やすい色にします
+// @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠とダークテーマのインラインコードを見やすい色にします
 // @author       https://github.com/securecat
 // @match        https://app.notion.com/*
 // @grant        GM_addStyle
@@ -22,6 +22,7 @@
 
     .notion-dark-theme {
       --tm-notion-link-color: #99F2FF;
+      --tm-notion-inline-code-color: #FF9287;
     }
 
     /*
@@ -71,6 +72,14 @@
     /* コメントの日付・(edited) 表示（クリックで詳細が出る） */
     [style*="color: var(--c-texTer)"] > [data-popup-origin] {
       color: var(--tm-notion-link-color) !important;
+    }
+
+    /*
+     * ダークテーマのインラインコード：暗い赤（#CF5148）が背景（#262626）に対して
+     * 3.5:1 しかないため、明るい赤にする。ライトテーマは十分なコントラストがあるので変えない
+     */
+    .notion-dark-theme .notion-inline-code-container > span {
+      color: var(--tm-notion-inline-code-color) !important;
     }
 
     /* ボタンブロックの枠線 */
