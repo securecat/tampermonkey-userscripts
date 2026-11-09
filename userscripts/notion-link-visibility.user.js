@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Notion - リンクとボタン枠の視認性改善
 // @namespace    https://github.com/securecat/tampermonkey-userscripts
-// @version      1.0
+// @version      1.1
 // @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠とインラインコードを見やすい色にします
 // @author       https://github.com/securecat
 // @match        https://app.notion.com/*
