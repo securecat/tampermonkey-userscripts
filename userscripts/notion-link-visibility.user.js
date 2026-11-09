@@ -2,7 +2,7 @@
 // @name         Notion - リンクとボタン枠の視認性改善
 // @namespace    https://github.com/securecat/tampermonkey-userscripts
 // @version      1.0
-// @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠とダークテーマのインラインコードを見やすい色にします
+// @description  Notion のリンク・メンション・目次・未入力プロパティ・コメント日付の薄いグレー文字を濃い青にし、下線を標準の太さに、ボタンブロックの枠とインラインコードを見やすい色にします
 // @author       https://github.com/securecat
 // @match        https://app.notion.com/*
 // @grant        GM_addStyle
@@ -13,11 +13,12 @@
   'use strict';
 
   GM_addStyle(`
-    /* テーマごとのリンク色 */
+    /* テーマごとの色 */
     :root,
     .notion-light-theme {
       --tm-notion-link-color: #00118F;
       --tm-notion-button-border-color: #949494;
+      --tm-notion-inline-code-color: #9F2118;
     }
 
     .notion-dark-theme {
@@ -75,10 +76,10 @@
     }
 
     /*
-     * ダークテーマのインラインコード：暗い赤（#CF5148）が背景（#262626）に対して
-     * 3.5:1 しかないため、明るい赤にする。ライトテーマは十分なコントラストがあるので変えない
+     * インラインコード：標準の赤（#CF5148）は、背景に対してライトテーマ（#F4F3F3）で 3.9:1、
+     * ダークテーマ（#262626）で 3.5:1 しかないため、それぞれ 7:1 以上になる赤にする
      */
-    .notion-dark-theme .notion-inline-code-container > span {
+    .notion-inline-code-container > span {
       color: var(--tm-notion-inline-code-color) !important;
     }
 
